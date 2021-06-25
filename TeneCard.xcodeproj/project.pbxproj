@@ -15,6 +15,10 @@
 		632C4B272685AAC900721144 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632C4B252685AAC900721144 /* LaunchScreen.storyboard */; };
 		632C4B512685AE6500721144 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C4B502685AE6500721144 /* Constant.swift */; };
 		632C4B552685B92A00721144 /* lincol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 632C4B542685B92A00721144 /* lincol.ttf */; };
+		632C4B5C2685BD4900721144 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C4B5A2685BD4900721144 /* PlayerCell.swift */; };
+		632C4B5D2685BD4900721144 /* PlayerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 632C4B5B2685BD4900721144 /* PlayerCell.xib */; };
+		63CA5DAA2685D20B00488232 /* UnitPlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CA5DA82685D20B00488232 /* UnitPlayerCell.swift */; };
+		63CA5DAB2685D20B00488232 /* UnitPlayerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63CA5DA92685D20B00488232 /* UnitPlayerCell.xib */; };
 		DD4E7C47D106D9C0AA6AA1A5 /* Pods_TeneCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F72CD20BCABD00462B6D3953 /* Pods_TeneCard.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +34,10 @@
 		632C4B282685AAC900721144 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		632C4B502685AE6500721144 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		632C4B542685B92A00721144 /* lincol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = lincol.ttf; sourceTree = "<group>"; };
+		632C4B5A2685BD4900721144 /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
+		632C4B5B2685BD4900721144 /* PlayerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerCell.xib; sourceTree = "<group>"; };
+		63CA5DA82685D20B00488232 /* UnitPlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitPlayerCell.swift; sourceTree = "<group>"; };
+		63CA5DA92685D20B00488232 /* UnitPlayerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UnitPlayerCell.xib; sourceTree = "<group>"; };
 		8A07E04512D9AE40E96765FE /* Pods-TeneCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeneCard.debug.xcconfig"; path = "Target Support Files/Pods-TeneCard/Pods-TeneCard.debug.xcconfig"; sourceTree = "<group>"; };
 		F72CD20BCABD00462B6D3953 /* Pods_TeneCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeneCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -67,8 +75,7 @@
 		632C4B192685AAC300721144 /* TeneCard */ = {
 			isa = PBXGroup;
 			children = (
-				632C4B472685AD1E00721144 /* Views */,
-				632C4B452685AD1700721144 /* Controllers */,
+				632C4B452685AD1700721144 /* Containers */,
 				632C4B442685AD0C00721144 /* DataModels */,
 				632C4B432685ACFD00721144 /* Configure */,
 				632C4B422685ACF600721144 /* Utils */,
@@ -92,6 +99,9 @@
 				632C4B532685B8C600721144 /* Fonts */,
 				632C4B1A2685AAC300721144 /* AppDelegate.swift */,
 				632C4B1C2685AAC300721144 /* SceneDelegate.swift */,
+				632C4B202685AAC300721144 /* Main.storyboard */,
+				632C4B252685AAC900721144 /* LaunchScreen.storyboard */,
+				632C4B1E2685AAC300721144 /* ViewController.swift */,
 			);
 			path = Configure;
 			sourceTree = "<group>";
@@ -103,21 +113,14 @@
 			path = DataModels;
 			sourceTree = "<group>";
 		};
-		632C4B452685AD1700721144 /* Controllers */ = {
+		632C4B452685AD1700721144 /* Containers */ = {
 			isa = PBXGroup;
 			children = (
-				632C4B1E2685AAC300721144 /* ViewController.swift */,
+				632C4B592685BCF100721144 /* GameSetting */,
+				632C4B582685BCE000721144 /* GameList */,
+				632C4B572685BCC200721144 /* Players */,
 			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		632C4B472685AD1E00721144 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				632C4B202685AAC300721144 /* Main.storyboard */,
-				632C4B252685AAC900721144 /* LaunchScreen.storyboard */,
-			);
-			path = Views;
+			path = Containers;
 			sourceTree = "<group>";
 		};
 		632C4B532685B8C600721144 /* Fonts */ = {
@@ -126,6 +129,39 @@
 				632C4B542685B92A00721144 /* lincol.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		632C4B572685BCC200721144 /* Players */ = {
+			isa = PBXGroup;
+			children = (
+				632C4B5A2685BD4900721144 /* PlayerCell.swift */,
+				632C4B5B2685BD4900721144 /* PlayerCell.xib */,
+			);
+			path = Players;
+			sourceTree = "<group>";
+		};
+		632C4B582685BCE000721144 /* GameList */ = {
+			isa = PBXGroup;
+			children = (
+				63CA5DA72685D1CF00488232 /* UnitPlayer */,
+			);
+			path = GameList;
+			sourceTree = "<group>";
+		};
+		632C4B592685BCF100721144 /* GameSetting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GameSetting;
+			sourceTree = "<group>";
+		};
+		63CA5DA72685D1CF00488232 /* UnitPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				63CA5DA82685D20B00488232 /* UnitPlayerCell.swift */,
+				63CA5DA92685D20B00488232 /* UnitPlayerCell.xib */,
+			);
+			path = UnitPlayer;
 			sourceTree = "<group>";
 		};
 		9F980DFFE3B58DB118B1CF79 /* Pods */ = {
@@ -204,9 +240,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63CA5DAB2685D20B00488232 /* UnitPlayerCell.xib in Resources */,
 				632C4B272685AAC900721144 /* LaunchScreen.storyboard in Resources */,
 				632C4B242685AAC900721144 /* Assets.xcassets in Resources */,
 				632C4B222685AAC300721144 /* Main.storyboard in Resources */,
+				632C4B5D2685BD4900721144 /* PlayerCell.xib in Resources */,
 				632C4B552685B92A00721144 /* lincol.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,7 +301,9 @@
 				632C4B1F2685AAC300721144 /* ViewController.swift in Sources */,
 				632C4B1B2685AAC300721144 /* AppDelegate.swift in Sources */,
 				632C4B1D2685AAC300721144 /* SceneDelegate.swift in Sources */,
+				63CA5DAA2685D20B00488232 /* UnitPlayerCell.swift in Sources */,
 				632C4B512685AE6500721144 /* Constant.swift in Sources */,
+				632C4B5C2685BD4900721144 /* PlayerCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +454,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A7Q5J9K3AS;
 				INFOPLIST_FILE = TeneCard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -434,6 +475,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A7Q5J9K3AS;
 				INFOPLIST_FILE = TeneCard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
