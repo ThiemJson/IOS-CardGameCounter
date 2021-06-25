@@ -1,0 +1,34 @@
+PODS:
+  - Hero (1.6.1)
+  - IQKeyboardManagerSwift (6.5.6)
+  - Realm (10.8.1):
+    - Realm/Headers (= 10.8.1)
+  - Realm/Headers (10.8.1)
+  - RealmSwift (10.8.1):
+    - Realm (= 10.8.1)
+  - SwipeCellKit (2.7.1)
+
+DEPENDENCIES:
+  - Hero
+  - IQKeyboardManagerSwift
+  - RealmSwift
+  - SwipeCellKit
+
+SPEC REPOS:
+  trunk:
+    - Hero
+    - IQKeyboardManagerSwift
+    - Realm
+    - RealmSwift
+    - SwipeCellKit
+
+SPEC CHECKSUMS:
+  Hero: 215865ba3ae41dd9bb08cd6c60a645529c6fc94b
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  Realm: a2db54d9dcceddeba936b429f5b3d6610a109686
+  RealmSwift: 2a3c75ecbf5a3b04080ff5f6f0554cf6337b4764
+  SwipeCellKit: 3972254a826da74609926daf59b08d6c72e619ea
+
+PODFILE CHECKSUM: c07db8e768293bbff49acf0e00a735d72e2e45c7
+
+COCOAPODS: 1.10.1

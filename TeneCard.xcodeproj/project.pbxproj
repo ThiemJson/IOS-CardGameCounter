@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,12 @@
 		632C4B222685AAC300721144 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632C4B202685AAC300721144 /* Main.storyboard */; };
 		632C4B242685AAC900721144 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632C4B232685AAC900721144 /* Assets.xcassets */; };
 		632C4B272685AAC900721144 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632C4B252685AAC900721144 /* LaunchScreen.storyboard */; };
+		632C4B512685AE6500721144 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C4B502685AE6500721144 /* Constant.swift */; };
+		DD4E7C47D106D9C0AA6AA1A5 /* Pods_TeneCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F72CD20BCABD00462B6D3953 /* Pods_TeneCard.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A1B904CA9DBCAAECF90D99A /* Pods-TeneCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeneCard.release.xcconfig"; path = "Target Support Files/Pods-TeneCard/Pods-TeneCard.release.xcconfig"; sourceTree = "<group>"; };
 		632C4B172685AAC300721144 /* TeneCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeneCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		632C4B1A2685AAC300721144 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		632C4B1C2685AAC300721144 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		632C4B232685AAC900721144 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		632C4B262685AAC900721144 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		632C4B282685AAC900721144 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		632C4B502685AE6500721144 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		8A07E04512D9AE40E96765FE /* Pods-TeneCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeneCard.debug.xcconfig"; path = "Target Support Files/Pods-TeneCard/Pods-TeneCard.debug.xcconfig"; sourceTree = "<group>"; };
+		F72CD20BCABD00462B6D3953 /* Pods_TeneCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeneCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD4E7C47D106D9C0AA6AA1A5 /* Pods_TeneCard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				632C4B192685AAC300721144 /* TeneCard */,
 				632C4B182685AAC300721144 /* Products */,
+				9F980DFFE3B58DB118B1CF79 /* Pods */,
+				B59CFF24E0DFACEC115528E3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +65,73 @@
 		632C4B192685AAC300721144 /* TeneCard */ = {
 			isa = PBXGroup;
 			children = (
-				632C4B1A2685AAC300721144 /* AppDelegate.swift */,
-				632C4B1C2685AAC300721144 /* SceneDelegate.swift */,
-				632C4B1E2685AAC300721144 /* ViewController.swift */,
-				632C4B202685AAC300721144 /* Main.storyboard */,
+				632C4B472685AD1E00721144 /* Views */,
+				632C4B452685AD1700721144 /* Controllers */,
+				632C4B442685AD0C00721144 /* DataModels */,
+				632C4B432685ACFD00721144 /* Configure */,
+				632C4B422685ACF600721144 /* Utils */,
 				632C4B232685AAC900721144 /* Assets.xcassets */,
-				632C4B252685AAC900721144 /* LaunchScreen.storyboard */,
 				632C4B282685AAC900721144 /* Info.plist */,
 			);
 			path = TeneCard;
+			sourceTree = "<group>";
+		};
+		632C4B422685ACF600721144 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				632C4B502685AE6500721144 /* Constant.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		632C4B432685ACFD00721144 /* Configure */ = {
+			isa = PBXGroup;
+			children = (
+				632C4B1A2685AAC300721144 /* AppDelegate.swift */,
+				632C4B1C2685AAC300721144 /* SceneDelegate.swift */,
+			);
+			path = Configure;
+			sourceTree = "<group>";
+		};
+		632C4B442685AD0C00721144 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		632C4B452685AD1700721144 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				632C4B1E2685AAC300721144 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		632C4B472685AD1E00721144 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				632C4B202685AAC300721144 /* Main.storyboard */,
+				632C4B252685AAC900721144 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9F980DFFE3B58DB118B1CF79 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A07E04512D9AE40E96765FE /* Pods-TeneCard.debug.xcconfig */,
+				3A1B904CA9DBCAAECF90D99A /* Pods-TeneCard.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B59CFF24E0DFACEC115528E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F72CD20BCABD00462B6D3953 /* Pods_TeneCard.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +141,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 632C4B2B2685AAC900721144 /* Build configuration list for PBXNativeTarget "TeneCard" */;
 			buildPhases = (
+				7AC0F3A0EE8BDEA182D4B249 /* [CP] Check Pods Manifest.lock */,
 				632C4B132685AAC300721144 /* Sources */,
 				632C4B142685AAC300721144 /* Frameworks */,
 				632C4B152685AAC300721144 /* Resources */,
+				1CA38059EDCFC112D1251B5B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +201,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1CA38059EDCFC112D1251B5B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TeneCard/Pods-TeneCard-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TeneCard/Pods-TeneCard-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TeneCard/Pods-TeneCard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AC0F3A0EE8BDEA182D4B249 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TeneCard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		632C4B132685AAC300721144 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +251,7 @@
 				632C4B1F2685AAC300721144 /* ViewController.swift in Sources */,
 				632C4B1B2685AAC300721144 /* AppDelegate.swift in Sources */,
 				632C4B1D2685AAC300721144 /* SceneDelegate.swift in Sources */,
+				632C4B512685AE6500721144 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +395,7 @@
 		};
 		632C4B2C2685AAC900721144 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A07E04512D9AE40E96765FE /* Pods-TeneCard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +415,7 @@
 		};
 		632C4B2D2685AAC900721144 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A1B904CA9DBCAAECF90D99A /* Pods-TeneCard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
