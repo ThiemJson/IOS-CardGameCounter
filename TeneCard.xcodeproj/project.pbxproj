@@ -14,6 +14,7 @@
 		632C4B242685AAC900721144 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632C4B232685AAC900721144 /* Assets.xcassets */; };
 		632C4B272685AAC900721144 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632C4B252685AAC900721144 /* LaunchScreen.storyboard */; };
 		632C4B512685AE6500721144 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632C4B502685AE6500721144 /* Constant.swift */; };
+		632C4B552685B92A00721144 /* lincol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 632C4B542685B92A00721144 /* lincol.ttf */; };
 		DD4E7C47D106D9C0AA6AA1A5 /* Pods_TeneCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F72CD20BCABD00462B6D3953 /* Pods_TeneCard.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		632C4B262685AAC900721144 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		632C4B282685AAC900721144 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		632C4B502685AE6500721144 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		632C4B542685B92A00721144 /* lincol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = lincol.ttf; sourceTree = "<group>"; };
 		8A07E04512D9AE40E96765FE /* Pods-TeneCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeneCard.debug.xcconfig"; path = "Target Support Files/Pods-TeneCard/Pods-TeneCard.debug.xcconfig"; sourceTree = "<group>"; };
 		F72CD20BCABD00462B6D3953 /* Pods_TeneCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeneCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -87,6 +89,7 @@
 		632C4B432685ACFD00721144 /* Configure */ = {
 			isa = PBXGroup;
 			children = (
+				632C4B532685B8C600721144 /* Fonts */,
 				632C4B1A2685AAC300721144 /* AppDelegate.swift */,
 				632C4B1C2685AAC300721144 /* SceneDelegate.swift */,
 			);
@@ -115,6 +118,14 @@
 				632C4B252685AAC900721144 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		632C4B532685B8C600721144 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				632C4B542685B92A00721144 /* lincol.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		9F980DFFE3B58DB118B1CF79 /* Pods */ = {
@@ -196,6 +207,7 @@
 				632C4B272685AAC900721144 /* LaunchScreen.storyboard in Resources */,
 				632C4B242685AAC900721144 /* Assets.xcassets in Resources */,
 				632C4B222685AAC300721144 /* Main.storyboard in Resources */,
+				632C4B552685B92A00721144 /* lincol.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
